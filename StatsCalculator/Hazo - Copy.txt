@@ -1,0 +1,12 @@
+Intelligence
+Wits
+Resolve
+Strength
+Dexterity
+Stamina
+Presence
+Manipulation
+Composure
+Capacity
+Control
+Regeneration
