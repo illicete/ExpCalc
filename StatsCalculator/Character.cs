@@ -61,9 +61,9 @@ namespace StatsCalculator
             string AttributeReq = "";
             foreach (DataGridViewRow row in dgvReqs.Rows)
             {
-                int mult = 0;
+                decimal mult = 0;
 
-                if ((row.Cells[1].Value == null || !int.TryParse(row.Cells[1].Value.ToString(), out mult)) || mult == 0)
+                if ((row.Cells[1].Value == null || !Decimal.TryParse(row.Cells[1].Value.ToString(), out mult)) || mult == 0)
                     continue;
 
 

@@ -41,11 +41,7 @@
             this.btnAddAttribute = new System.Windows.Forms.Button();
             this.nddLevel = new System.Windows.Forms.NumericUpDown();
             this.dgvAttributes = new System.Windows.Forms.DataGridView();
-            this.Attr = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Level = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvReqs = new System.Windows.Forms.DataGridView();
-            this.dgvRowAttribute = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgvCreateMult = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnAddPreReq = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -57,6 +53,10 @@
             this.btnDelete = new System.Windows.Forms.Button();
             this.nupCurLevel = new System.Windows.Forms.NumericUpDown();
             this.lblCurLevel = new System.Windows.Forms.Label();
+            this.Attr = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Level = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvRowAttribute = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvCreateMult = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.nddLevel)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAttributes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvReqs)).BeginInit();
@@ -160,22 +160,6 @@
             this.dgvAttributes.TabIndex = 80;
             this.dgvAttributes.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvAttributes_CellValueChanged);
             // 
-            // Attr
-            // 
-            this.Attr.FillWeight = 35F;
-            this.Attr.Frozen = true;
-            this.Attr.HeaderText = "Attr";
-            this.Attr.Name = "Attr";
-            this.Attr.ReadOnly = true;
-            this.Attr.Width = 48;
-            // 
-            // Level
-            // 
-            this.Level.FillWeight = 35F;
-            this.Level.HeaderText = "LVL";
-            this.Level.Name = "Level";
-            this.Level.Width = 51;
-            // 
             // dgvReqs
             // 
             this.dgvReqs.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -186,19 +170,6 @@
             this.dgvReqs.Name = "dgvReqs";
             this.dgvReqs.Size = new System.Drawing.Size(181, 150);
             this.dgvReqs.TabIndex = 81;
-            // 
-            // dgvRowAttribute
-            // 
-            this.dgvRowAttribute.HeaderText = "Attribute Req";
-            this.dgvRowAttribute.Name = "dgvRowAttribute";
-            this.dgvRowAttribute.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvRowAttribute.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // dgvCreateMult
-            // 
-            this.dgvCreateMult.HeaderText = "Mult";
-            this.dgvCreateMult.Name = "dgvCreateMult";
-            this.dgvCreateMult.Width = 35;
             // 
             // btnAddPreReq
             // 
@@ -296,6 +267,39 @@
             this.lblCurLevel.TabIndex = 89;
             this.lblCurLevel.Text = "Current Level";
             // 
+            // Attr
+            // 
+            this.Attr.FillWeight = 35F;
+            this.Attr.Frozen = true;
+            this.Attr.HeaderText = "Attr";
+            this.Attr.Name = "Attr";
+            this.Attr.ReadOnly = true;
+            this.Attr.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.Attr.Width = 29;
+            // 
+            // Level
+            // 
+            this.Level.FillWeight = 35F;
+            this.Level.HeaderText = "LVL";
+            this.Level.Name = "Level";
+            this.Level.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.Level.Width = 32;
+            // 
+            // dgvRowAttribute
+            // 
+            this.dgvRowAttribute.HeaderText = "Attribute Req";
+            this.dgvRowAttribute.Name = "dgvRowAttribute";
+            this.dgvRowAttribute.ReadOnly = true;
+            this.dgvRowAttribute.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvRowAttribute.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // dgvCreateMult
+            // 
+            this.dgvCreateMult.HeaderText = "Mult";
+            this.dgvCreateMult.Name = "dgvCreateMult";
+            this.dgvCreateMult.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.dgvCreateMult.Width = 35;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -351,8 +355,6 @@
         private System.Windows.Forms.DataGridView dgvAttributes;
         private System.Windows.Forms.DataGridView dgvReqs;
         private System.Windows.Forms.Button btnAddPreReq;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dgvRowAttribute;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dgvCreateMult;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label lblSkillExp;
@@ -360,11 +362,13 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label lblAddAttribute;
         private System.Windows.Forms.TextBox txtAddAttribute;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Attr;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Level;
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.NumericUpDown nupCurLevel;
         private System.Windows.Forms.Label lblCurLevel;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Attr;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Level;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgvRowAttribute;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgvCreateMult;
     }
 }
 

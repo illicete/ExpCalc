@@ -73,10 +73,14 @@ namespace StatsCalculator
         private List<List<string>> dgvToList(DataGridView dgvAttributes)
         {
             List<List<string>> List = new List<List<string>>();
+            string first = "";
+            string second = "0";
 
             foreach (DataGridViewRow row in dgvAttributes.Rows)
             {
-                List.Add(new List<string> { row.Cells[0].Value.ToString(), row.Cells[1].Value.ToString()});
+                first = row.Cells[0].Value != null ? row.Cells[0].Value.ToString() : "";
+                second = row.Cells[1].Value != null ? row.Cells[1].Value.ToString() : "0";
+                List.Add(new List<string> { first, second});
 
 
             }
